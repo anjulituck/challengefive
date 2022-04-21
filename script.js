@@ -4,7 +4,7 @@ $(document).ready(function () {
     let timeNow = moment().format("MMMM Do YYYY");
     let displayDate = document.getElementById("currentDay");
     displayDate.innerHTML = timeNow;
-    let currentHour = moment().format("HH");
+    let currentTime = moment().hour();
 
     //Saving in local storage
 
@@ -16,20 +16,21 @@ $(document).ready(function () {
     });
   
     //Function for checking past, present and future times and dates
-
-    $(".time-div").each(function () {
-      let timeDiv = $(this).attr("id").split("-")[1];
+    function () {
+        $(".time-div").each(function () {
+            let timeBlock = parseInt($(this).attr("id").split("hour")[1]);
       
-      if (currentHour == timeDiv) {
+      if (currentTime == timeBlock ) {
         $(this).addClass("present");
         $(this).children(".description")
-      } else if (currentHour < timeDiv) {
+      } else if (currentTime < timeBlock  {
         $(this).removeClass("present");
         $(this).addClass("future");
-      } else if (currentHour > timeDiv) {
+      } else (currentTime > timeBlock) {
         $(this).removeClass("future");
         $(this).addClass("past");
       }
+    }
     });
   
     //Get item from local storage
