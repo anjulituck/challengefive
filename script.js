@@ -15,18 +15,21 @@ $(document).ready(function () {
     });
   
     //Function for checking past, present and future times and dates
-    function () {
+    function timeChecker() {
         $(".time-div").each(function () {
             let timeBlock = parseInt($(this).attr("id").split("hour")[1]);
       
       if (currentTime == timeBlock ) {
         $(this).addClass("present");
-        $(this).children(".description")
+        $(this).RemoveClass("past");
+        $(this).removeClass("future");
       } else if (currentTime < timeBlock  {
         $(this).removeClass("present");
+        $(this).removeClass("past");
         $(this).addClass("future");
       } else (currentTime > timeBlock) {
         $(this).removeClass("future");
+        $(this).removeClass("present");
         $(this).addClass("past");
       }
     }
@@ -44,4 +47,6 @@ $(document).ready(function () {
     $("#hour-15 .time-block").val(localStorage.getItem("15"));
     $("#hour-16 .time-block").val(localStorage.getItem("16"));
     $("#hour-17 .time-block").val(localStorage.getItem("17"));
+
+    timeChecker();
   });
