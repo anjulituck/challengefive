@@ -6,7 +6,7 @@ This project contains a work day scheduler application using HTML, Bootstrap, jQ
 
 # Screenshot - In Progress 
 
-![Screenshot of Scheduler In Progress]("Assets/Images/Work Day Scheduler - In Progress.png")
+![Screenshot of Scheduler In Progress](Assets/Images/Work Day Scheduler - In Progress.png)
 
 # User Story 
 
@@ -38,4 +38,4 @@ THEN the saved events persist
 
 REPO: https://github.com/anjulituck/challengefive.git
 
-GITHUB PAGES:  https://anjulituck.github.io/challengefive/
+GITHUB PAGES: https://anjulituck.github.io/challengefive/
