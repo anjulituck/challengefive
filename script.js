@@ -1,32 +1,34 @@
-$(document).ready(function () {
-    //Set-up today's time and date format
+//Set-up today's time and date format
 
-    let timeNow = moment().format("dddd, MMMM Do YYYY");
-    $("#currentDay").html(timeNow);
-    let currentTime = moment().hour();
+let timeNow = moment().format("dddd, MMMM Do YYYY");
+$("#currentDay").html(timeNow);
+let currentTime = moment().hour();
+
+$(document).ready(function () {
 
     //Saving in local storage 
 
     $(".saveBtn").click(function (event) {
       event.preventDefault();
-      let value = $(this).siblings(".time-block").val();
-      let time = $(this).parent().attr("id").split("-")[1];
-      localStorage.setItem(time, value);
+      let description = $(this).siblings(".description").val();
+      let time = $(this).parent().attr("id");
+      localStorage.setItem(time, description);
     });
   
     //Function for checking past, present and future times and dates
+
     function timeChecker() {
-        $(".time-div").each(function () {
+        $(".time-block").each(function () {
             let timeBlock = parseInt($(this).attr("id").split("hour")[1]);
       
       if (currentTime == timeBlock ) {
         $(this).addClass("present");
-        $(this).RemoveClass("past");
+        $(this).removeClass("past");
         $(this).removeClass("future");
       } else if (currentTime < timeBlock  {
         $(this).removeClass("present");
-        $(this).removeClass("past");
-        $(this).addClass("future");
+        $(this).addClass("past");
+        $(this).removeClass("future");
       } else (currentTime > timeBlock) {
         $(this).removeClass("future");
         $(this).removeClass("present");
