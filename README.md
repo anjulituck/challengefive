@@ -4,9 +4,9 @@
 
 This project contains a work day scheduler application using HTML, Bootstrap, jQuery, Moment.js and CSS. You will have the capabilites to add different items to each time. There will be a color associated with present, past and future events to help visually sort the scheduler.
 
-# Screenshot
+# Screenshot - In Progress 
 
-
+![Screenshot of Scheduler In Progress]("Assets/Images/Work Day Scheduler - In Progress.png")
 
 # User Story 
 
@@ -36,6 +36,6 @@ THEN the saved events persist
 
 # Deployed Links
 
-REPO:
+REPO: https://github.com/anjulituck/challengefive.git
 
-GITHUB PAGES:
+GITHUB PAGES:  https://anjulituck.github.io/challengefive/
