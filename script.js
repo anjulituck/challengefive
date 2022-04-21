@@ -2,11 +2,11 @@ $(document).ready(function () {
     //Set-up today's time and date format
 
     let timeNow = moment().format("MMMM Do YYYY");
-    let displayDate = document.getElementById("currentDay");
+    $("#currentDay").timeNow;
     displayDate.innerHTML = timeNow;
     let currentTime = moment().hour();
 
-    //Saving in local storage
+    //Saving in local storage 
 
     $(".saveBtn").click(function (event) {
       event.preventDefault();
