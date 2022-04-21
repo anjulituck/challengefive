@@ -6,7 +6,7 @@ This project contains a work day scheduler application using HTML, Bootstrap, jQ
 
 # Screenshot - In Progress 
 
-![Screenshot of Scheduler In Progress](Assets/Images/Work Day Scheduler - In Progress.png)
+![Screenshot of Scheduler In Progress](/Assets/Images/Work%20Day%20Scheduler%20-%20In%20Progress.png)
 
 # User Story 
 
